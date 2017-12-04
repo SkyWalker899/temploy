@@ -1,0 +1,13 @@
+<form class="mt-5 mb-5" style="width: 100%">
+  <div class="form-group">
+    <label for="email" class="labels">Email address</label>
+    <input type="email" name="email" class="form-control" [(ngModel)]="newUser.email" id="email"
+           placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="password" class="labels">Password</label>
+    <input type="password" class="form-control" id="password" name="password" [(ngModel)]="newUser.password"
+           placeholder="Password">
+  </div>
+</form>
+<button mat-raised-button="accent" (click)="emailRegistration()">SIGNUP</button>

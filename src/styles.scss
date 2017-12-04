@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '../node_modules/@covalent/core/theming/_all-theme.scss';
+@include covalent-layout();
+
+$void: #031424;
+$fushia: #A239CA;
+$blue: #4717F6;
+$stark: #E7DFDD;
+$crimson_red: #CF6766;
+
+
+body{
+  background-color: $void;
+}
+
+button, input {
+  outline: none !important;
+}
+
+button, input:focus{
+  outline: none !important;
+}
+.labels{
+  color: $void;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}

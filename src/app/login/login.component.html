@@ -1,0 +1,26 @@
+<div layout="column" layout-align="center center" style="height: 100%">
+  <div layout="row" style="width: 100%" layout-align="center center">
+    <mat-card flex="35" flex-xs="95" flex-sm="70">
+      <mat-card-content>
+        <form class="mt-5 mb-5" style="width: 100%">
+          <div class="form-group">
+            <label for="email" class="labels">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <div class="form-group" class="labels">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+        </form>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <button mat-raised-button class="mb-2 cta-btn login">Login</button>
+        <div layout="row" layout-align="center center" class="mt-3">
+          <p class="cta-txt">Not Registered yet ? <span (click)="register()" class="focus-txt">SIGN UP</span></p>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+

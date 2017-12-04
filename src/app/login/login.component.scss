@@ -1,0 +1,41 @@
+$void: #031424;
+$fushia: #A239CA;
+$blue: #4717F6;
+$stark: #E7DFDD;
+$crimson_red: #CF6766;
+$light_blue: #448AFF;
+
+.shadow-box{
+  background-color: $stark;
+  border-radius: 3px;
+  width: 33%;
+}
+.login{
+  background-color: $crimson_red;
+  color: white;
+}
+.cta-btn{
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  width: 100%;
+}
+.signUp{
+  background-color: $void;
+  color: white;
+}
+.cta-txt{
+  text-transform: uppercase;
+  color: $void;
+  font-weight: 500;
+  font-size: 12px;
+}
+.focus-txt{
+  color: red;
+}
+.labels{
+  color: $void;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
