@@ -1,11 +1,13 @@
-
-$void: #031424;
+@import "../../styles";
 
 
 .rounded-btn{
   border-radius: 50px;
-  border: solid 2px red;
+  border: solid 2px $cyan;
   background-color: transparent;
   padding: 10px 15px;
-  color: red;
+  color: $cyan;
+}
+.success-holder{
+  height: 400px;
 }

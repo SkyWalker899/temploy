@@ -2,16 +2,23 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import '../node_modules/@covalent/core/theming/_all-theme.scss';
 @include covalent-layout();
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import "assets/styles/animations";
 
 $void: #031424;
 $fushia: #A239CA;
 $blue: #4717F6;
 $stark: #E7DFDD;
 $crimson_red: #CF6766;
-
+$cyan: #60E2D7;
+$yellow: #e6cf8b;
+$gray: #333;
+$ash: #455A64;
 
 body{
   background-color: $void;
+  font-family: 'Lato', sans-serif !important;
+  color: $gray;
 }
 
 button, input {
@@ -23,10 +30,38 @@ button, input:focus{
 }
 .labels{
   color: $void;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
 }
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
+.cta-btn{
+  text-transform: uppercase;
+  background-color: $yellow;
+  font-size: 14px;
+  color: $void;
+  font-weight: 500;
+  width: 100%;
+}
+.tab{
+  text-align: center;
+  padding-bottom: 0.5em;
+  cursor: pointer;
+}
+.active-tab{
+  border-bottom: solid 2px $void;
+}
+.inactive-tab{
+  color: #666;
+}
+.success-message{
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 2em;
+  color: $ash !important;
+  text-align: center;
+  font-weight: 500;
+}
+

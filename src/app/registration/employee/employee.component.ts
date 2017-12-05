@@ -11,14 +11,16 @@ export class EmployeeComponent implements OnInit {
   @Output() google: EventEmitter<any> = new EventEmitter();
   @Output() pureRegistration: EventEmitter<any> = new EventEmitter();
   newUser = new NewEmployee();
+  confirmPassword: string;
   constructor() {
   }
 
   ngOnInit() {
+
   }
 
   googleRegistration() {
-    this.google.emit('couc');
+    this.google.emit();
   }
 
   emailRegistration() {

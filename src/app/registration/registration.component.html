@@ -1,18 +1,37 @@
 <div layout="column" style="height: 100%" layout-align="center center">
   <div layout="row" style="width: 100%" layout-align="center center">
-    <mat-card flex="40" flex-xs = "95" flex-sm="70">
-      <div layout="row" layout-align="center center" class="mt-3 mb-4">
-        <button class="rounded-btn mr-2" (click)="toggleViews('employee')">I WANT TO WORK</button>
-        <button class="rounded-btn" (click)="toggleViews('employer')">I WANT TO HIRE</button>
-      </div>
-      <mat-card-content>
-        <div *ngIf="isEmployer; else employeeTemplate">
-          <app-employer></app-employer>
+    <mat-card flex="40" flex-xs="95" flex-sm="70">
+      <div *ngIf="!hasSuccessFullPost; else successTemplate">
+        <div layout="row" layout-align="center center" class="mt-3 mb-4">
+          <div (click)="toggleViews('employee')" flex class="tab"
+               [ngClass]="{'active-tab': !isEmployer, 'inactive-tab': isEmployer}">I WANT TO WORK
+          </div>
+          <div class="rounded-btn" flex (click)="toggleViews('employer')" class="tab"
+               [ngClass]="{'active-tab': isEmployer, 'inactive-tab': !isEmployer}">I WANT TO HIRE
+          </div>
         </div>
-        <ng-template #employeeTemplate>
-          <app-employee (google) = "googleRegistration($event)" (pureRegistration)="emailRegistration($event)"></app-employee>
-        </ng-template>
-      </mat-card-content>
+        <mat-card-content>
+          <div *ngIf="isEmployer; else employeeTemplate">
+            <app-employer></app-employer>
+          </div>
+          <ng-template #employeeTemplate>
+            <app-employee (google)="googleRegistration($event)"
+                          (pureRegistration)="emailRegistration($event)"></app-employee>
+          </ng-template>
+        </mat-card-content>
+      </div>
+      <ng-template #successTemplate>
+        <div layout="row" layout-align="center center" class="success-holder">
+          <div layout="column" layout-align="center center">
+            <img src="assets/icons/success_post.svg" class="animated bounceIn">
+            <p class="mt-5 mb-0 success-message pl-3 pr-3">You have successfully registered, you'll now be redirected to your profile</p>
+          </div>
+        </div>
+      </ng-template>
     </mat-card>
   </div>
 </div>
+
+
+<div [hidden]="!isCheckingPhone" id="phone-sign-in-recaptcha"></div>
+

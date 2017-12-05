@@ -1,6 +1,7 @@
 export class NewEmployee {
-  email: string;
-  password: string;
-  constructor(){
+  email?: string;
+  password?: string;
+  phone?: string;
+  constructor() {
   }
 }
