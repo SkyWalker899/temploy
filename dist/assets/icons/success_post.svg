@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>if_success_1646004</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-1.77635684e-13%" id="linearGradient-1">
+            <stop stop-color="#4CB8C4" offset="0%"></stop>
+            <stop stop-color="#3CD3AD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="if_success_1646004" fill-rule="nonzero">
+            <circle id="Oval" fill="url(#linearGradient-1)" cx="75" cy="75" r="75"></circle>
+            <path d="M109.863281,45.1171875 L56.8945312,98.0859375 L40.1367188,81.3574219 C38.8769531,80.0976562 36.8554688,80.0976562 35.625,81.3574219 C34.3652344,82.6171875 34.3652344,84.6386719 35.625,85.8691406 L54.6386719,104.882812 C55.2539062,105.498047 56.0742188,105.820312 56.8945312,105.820312 C57.7148438,105.820312 58.5351562,105.498047 59.1503906,104.882812 L114.375,49.6582031 C115.634766,48.3984375 115.634766,46.3769531 114.375,45.1464844 C113.115234,43.8867188 111.09375,43.8867188 109.863281,45.1171875 Z" id="Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
